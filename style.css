@@ -828,3 +828,18 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+/* ===== LOGO DEL ESTUDIO ===== */
+
+.studio-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+.studio-logo img {
+  width: 140px;
+  height: auto;
+  opacity: 0.9;
+}
