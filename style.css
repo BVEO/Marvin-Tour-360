@@ -833,13 +833,20 @@ body.view-control-buttons .viewControlButton {
 
 .studio-logo {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  bottom: 15px;        /* Separación desde abajo */
+  right: 20px;         /* Separación desde la derecha */
   z-index: 9999;
+  pointer-events: none; /* No interfiere con botones del tour */
 }
 
 .studio-logo img {
-  width: 140px;
+  width: 120px;        /* Tamaño elegante */
   height: auto;
+  opacity: 0.65;       /* Efecto watermark */
+  transition: opacity 0.3s ease;
+}
+
+/* Efecto suave al pasar el mouse (opcional elegante) */
+.studio-logo img:hover {
   opacity: 0.9;
 }
