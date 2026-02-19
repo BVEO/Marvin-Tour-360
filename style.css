@@ -850,3 +850,80 @@ body.view-control-buttons .viewControlButton {
 .studio-logo img:hover {
   opacity: 0.9;
 }
+/* ===== EFECTO ACRÍLICO MODERNO ===== */
+
+#titleBar .sceneName,
+#fullscreenToggle,
+#autorotateToggle,
+#sceneListToggle,
+#sceneList .scenes,
+.viewControlButton,
+.info-hotspot .info-hotspot-header,
+.info-hotspot .info-hotspot-text,
+.info-hotspot-modal .info-hotspot-header,
+.info-hotspot-modal .info-hotspot-text {
+
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* ===== TIPOGRAFÍA ELEGANTE ===== */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ===== TEXTO MÁS VISIBLE Y FINO ===== */
+
+#titleBar,
+#titleBar .sceneName,
+#sceneList .scenes,
+#sceneList .scene {
+
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ===== EFECTO ACRÍLICO SUAVE (BARRAS PRINCIPALES) ===== */
+
+#titleBar,
+#sceneList .scenes {
+
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+
+/* ===== ESCENA ACTIVA – ESTILO PREMIUM ===== */
+
+#sceneList .scene.current {
+
+  background: rgba(255, 255, 255, 0.10) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-left: 3px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255,255,255,0.95) !important;
+
+  transition: all 0.3s ease;
+}
+
+
+/* ===== HOVER SUAVE ===== */
+
+#sceneList .scene:hover {
+
+  background: rgba(255,255,255,0.15);
+  transition: all 0.3s ease;
+}
